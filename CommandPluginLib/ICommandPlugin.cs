@@ -59,5 +59,16 @@ namespace CommandPluginLib
             Flag = _flag;
         }
 
+        public override string ToString()
+        {
+            return ToString(0);
+        }
+
+        public string ToString(int spacing)
+        {
+            string s = "".PadRight(spacing);
+            return $"{s}Source: {Source}\n{s}Destination: {Destination}\n{s}Flag: {Flag}\n{s}Data: {Data}";
+        }
+
     }
 }
