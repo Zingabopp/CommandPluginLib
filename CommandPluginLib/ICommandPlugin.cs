@@ -14,7 +14,7 @@ namespace CommandPluginLib
         /// <summary>
         /// List of commands that can be received by this plugin.
         /// </summary>
-        Dictionary<string, Action<string>> Commands { get; }
+        Dictionary<string, Action<object, string>> Commands { get; }
 
         /// <summary>
         /// Code to execute when a message is received.
