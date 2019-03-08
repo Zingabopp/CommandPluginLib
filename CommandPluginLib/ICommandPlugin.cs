@@ -14,7 +14,7 @@ namespace CommandPluginLib
         /// <summary>
         /// List of commands that can be received by this plugin.
         /// </summary>
-        List<string> Commands { get; }
+        Dictionary<string, Action<string>> Commands { get; set; }
 
         /// <summary>
         /// Code to execute when a message is received.
@@ -26,7 +26,7 @@ namespace CommandPluginLib
         /// <summary>
         /// Executed once the plugin is loaded.
         /// </summary>
-        void Start();
+        void Initialize();
 
         /// <summary>
         /// Messages to send to the server.
