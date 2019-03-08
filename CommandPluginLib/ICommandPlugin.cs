@@ -31,7 +31,7 @@ namespace CommandPluginLib
         /// <summary>
         /// Messages to send to the server.
         /// </summary>
-        event Action<MessageData> MessageReady;
+        event Action<object, MessageData> MessageReady;
     }
 
     /// <summary>
