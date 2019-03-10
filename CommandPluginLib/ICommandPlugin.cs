@@ -52,7 +52,6 @@ namespace CommandPluginLib
         /// <param name="_data">Message data</param>
         public MessageData(string _src, string _dest, string _data, string _flag ="")
         {
-            Console.WriteLine("Constructed new message!");
             Source = _src;
             Destination = _dest;
             Data = _data;
